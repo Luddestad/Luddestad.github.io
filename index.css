@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #AAAAAA;
+   
+    
+}
+
+header{
+    background-color:#051d16;
+    margin: 0;
+    
+}
+ h1{
+    padding: 1em;
+    margin: 0;
+    text-align:left;
+    font-size: 3em;
+    
+    color: #FFFFFF;
+}
+
+h3{
+    margin-bottom: 0.5em;
+    font-size: 2em;
+ 
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight:750;
+}
+
+
+
+
+.Banking{
+    display: inline-block;
+    width: 15em;
+    max-width: 15em;
+    height: 15em;
+    max-height: 15em;
+    padding:5em;
+    margin:1em;
+    border-radius: 1em;
+    background-color: #220c0c1a;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+
+}
+
+
+.BankingValues button{
+    background:    #15d798;
+    border-radius: 0.5em;
+    padding:       1em 2em;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    
+}
+
+
+
+.Work{
+     display: inline-block;
+     padding:5em;
+     margin : 2em;
+     border-radius: 1em;
+     background-color: #220c0c1a;
+     -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+ }
+
+
+
+
+
+
+
+.WorkValues  #bankButton{
+    
+    background:    #15d798;
+    border-radius: 0.5em;
+    padding:       0.5em 1em;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+
+    
+}
+
+.WorkValues  #workButton{
+    
+    background:    #d73015;
+    border-radius: 0.5em;
+    padding:       0.5em 1em;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+
+    
+}
+
+.WorkValues  #payLoanButton{
+    
+    background:    #1539d7;
+    border-radius: 0.5em;
+    padding:       0.5em 1em;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    margin: 0.5em;
+    position: relative;
+    left: 2em;
+    
+}
+
+.Laptops{
+    width: 15em;
+    max-width: 15em;
+    height: 15em;
+    max-height: 15em;
+    display: inline-block;
+    padding:5em;
+    margin:1em;
+    border-radius: 1em;
+    background-color: #220c0c1a;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+
+
+.LaptopValues #laptop{
+    
+    margin-bottom: 1em;
+    
+}
+
+
+
+.LaptopValues select{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Firefox (3.6 to 15) */
+    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of Internet Explorer  10*/
+    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */
+    background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+
+.Buy{
+    
+
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    padding: 5em;
+    margin: 5em;
+    border-radius: 1em;
+    background-color: #220c0c1a;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+.BuyValues{
+    text-align: center;
+  
+    
+}
+
+
+
+#laptopPrice{
+    text-align: center;
+    font-size: 3em;
+}
+
+.BuyValues button{
+    background:    #15d798;
+    border-radius: 0.5em;
+    padding:       0.5em 1em;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    margin: 0.5em;
+    
+}
+
