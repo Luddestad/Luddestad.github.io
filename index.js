@@ -8,13 +8,12 @@ const laptopImg = document.getElementById("laptopImg");
 const laptopPrice = document.getElementById("laptopPrice");
 const laptopDescription = document.getElementById("buyLaptopDescription");
 const laptopName = document.getElementById("laptopName");
-
 //Variables
 let balance = 0;
 let workbalance = 0;
 let loanAmount = 0;
 let loanbutton = document.getElementById("payLoanButton").style.display = "none"
-
+let purchasedPc = true;
 //URL for accessing API
 const baseURL = "https://noroff-komputer-store-api.herokuapp.com";
 
@@ -105,6 +104,11 @@ function getLoanFunction(){
         if(loanAmount > 0){
             alert("You must pay back the oustanding loan value before you can get a new loan")
         }
+
+        if(purchasedPc === false){
+          alert("You must buy a PC if you want to get another loan")
+        }
+        
         else{
             var input = prompt("How much do you want to borrow")
         }        
@@ -116,12 +120,13 @@ function getLoanFunction(){
         alert("You must enter an amount larger than 0")
     }
 
-    if(input <= (balance*2) && input > 0){
+    if(input <= (balance*2) && input > 0 && purchasedPc === true){
         loanAmount += parseInt(input)
         alert("Request Accepted! You now owe me" + " " + (loanAmount) + "kr")
         loanbutton = document.getElementById("payLoanButton").style.display = "block"
         parseInt(loanAmount)
         balance = balance + loanAmount
+        purchasedPc = false;
         updateBalance()
         updateOutstandingLoan()
     }
@@ -132,6 +137,7 @@ function buyNowButton(){
     if (balance >= price){
         balance -= price
         updateBalance()
+        purchasedPc = true;
         alert("You have bought:" + filteredList[0].title);
     }
     else{
