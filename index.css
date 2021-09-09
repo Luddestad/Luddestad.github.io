@@ -6,30 +6,31 @@
     align-items: center;
 }
 
+main{
+    justify-content: center;
+    align-items: center;
+}
+
 body{
-    background-color: #AAAAAA;
-   
-    
+    background-color: #b9b9b9;
 }
 
 header{
     background-color:#051d16;
-    margin: 0;
     
 }
  h1{
     padding: 1em;
-    margin: 0;
+   
     text-align:left;
-    font-size: 3em;
+    font-size: 2em;
     
     color: #FFFFFF;
 }
 
 h3{
-    margin-bottom: 0.5em;
-    font-size: 2em;
- 
+    font-size: 20px;
+    margin-bottom: 3em;
 }
 
 p{
@@ -38,17 +39,20 @@ p{
     font-weight:750;
 }
 
+h5{
+    font-size: 1em;
+}
 
-
+main{
+    margin:auto;
+    width: 50%;
+}
 
 .Banking{
     display: inline-block;
-    width: 15em;
-    max-width: 15em;
-    height: 15em;
-    max-height: 15em;
-    padding:5em;
-    margin:1em;
+    
+    padding: 2em;
+    margin: 1em;
     border-radius: 1em;
     background-color: #220c0c1a;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -57,11 +61,10 @@ p{
 
 }
 
-
 .BankingValues button{
     background:    #15d798;
     border-radius: 0.5em;
-    padding:       1em 2em;
+    padding:       0.2em 0.4em;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
@@ -69,12 +72,11 @@ p{
     
 }
 
-
-
 .Work{
+    
      display: inline-block;
-     padding:5em;
-     margin : 2em;
+     padding: 2em;
+     margin: 1em;
      border-radius: 1em;
      background-color: #220c0c1a;
      -webkit-box-shadow: 0 8px 6px -6px black;
@@ -82,17 +84,11 @@ p{
           box-shadow: 0 8px 6px -6px black;
  }
 
-
-
-
-
-
-
 .WorkValues  #bankButton{
     
     background:    #15d798;
     border-radius: 0.5em;
-    padding:       0.5em 1em;
+    padding:       0.2em 0.4em;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
@@ -105,7 +101,7 @@ p{
     
     background:    #d73015;
     border-radius: 0.5em;
-    padding:       0.5em 1em;
+    padding:       0.2em 0.4em;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
@@ -118,25 +114,24 @@ p{
     
     background:    #1539d7;
     border-radius: 0.5em;
-    padding:       0.5em 1em;
+    padding:       0.2em 0.4em;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
     text-align:    center;
-    margin: 0.5em;
+    margin: 0.5em 0.5em  0em 0.5em;
+
     position: relative;
-    left: 2em;
+    
     
 }
 
 .Laptops{
-    width: 15em;
-    max-width: 15em;
-    height: 15em;
-    max-height: 15em;
     display: inline-block;
-    padding:5em;
-    margin:1em;
+    max-width: 12em;
+    max-height: 20em;
+    padding: 3em;
+    margin: 1em;
     border-radius: 1em;
     background-color: #220c0c1a;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -144,14 +139,16 @@ p{
          box-shadow: 0 8px 6px -6px black;
 }
 
+.Laptops #laptopFeatures li{
+    max-width: 12em;
+    max-height: 12em;
+}
 
 .LaptopValues #laptop{
     
     margin-bottom: 1em;
     
 }
-
-
 
 .LaptopValues select{
     -webkit-appearance: button;
@@ -174,18 +171,13 @@ p{
     padding-bottom: 5px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+    max-width: 15em;
 }
 
-
 .Buy{
-    
-
-    justify-content: center;
-    align-items: center;
-    width: 50em;
-    padding: 5em;
-    margin: 5em;
+    max-width: 50em;
+    padding: 2em;
+    margin: 1em;
     border-radius: 1em;
     background-color: #220c0c1a;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -198,17 +190,15 @@ p{
     
 }
 
-
-
 #laptopPrice{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .BuyValues button{
     background:    #15d798;
     border-radius: 0.5em;
-    padding:       0.5em 1em;
+    padding:       1em 2em;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
@@ -216,4 +206,3 @@ p{
     margin: 0.5em;
     
 }
-

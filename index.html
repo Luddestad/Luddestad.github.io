@@ -13,46 +13,48 @@
     </header>
 
     <main>
-        <div class ="Banking" id="Banking">
-            <div class="BankingValues">
-            <h3>Balance</h3>
-            <p id=currentBalance> Balance: 0 kr</p>
-            <p id=outstandingLoan></p>
-            <button class ="button" id="getLoanButton" onclick="getLoanFunction()">Get Loan</button>
-            </div>
-        </div>
-
-
-        <div class = "Work" id="Work">
-            <div class="WorkValues">
-                <h3>Work</h3>
-                <p id="pay">Pay: 0 kr</p>
-                <button class ="button" id="workButton"  onclick="workFunction()">Work</button>
-                <button class= "button" id="bankButton" onclick="bankFunction()">Bank</button>
-                <button class= "button"id="payLoanButton" onclick="payLoanFunction()">Pay Loan</button>
-            </div>         
-        </div>
-        
-
-        <div class = "Laptops" id="Laptops">
-            <div class="LaptopValues">
-                <h3>Laptops</h3>
-                <select name="laptop" id="laptop"></select>
-                <h5>Features:</h5>
-                <ul name ="laptopFeatures" id="laptopFeatures"></ul>
+        <div class= main-container>
+            <div class ="Banking" id="Banking">
+                <div class="BankingValues">
+                <h3>Balance</h3>
+                <p id=currentBalance> Balance: 0 kr</p>
+                <p id=outstandingLoan></p>
+                <button class ="button" id="getLoanButton" onclick="getLoanFunction()">Get Loan</button>
+                </div>
             </div>
 
+            <div class = "Work" id="Work">
+                <div class="WorkValues">
+                    <h3>Work</h3>
+                    <p id="pay">Pay: 0 kr</p>
+                    <button class ="button" id="workButton"  onclick="workFunction()">Work</button>
+                    <button class= "button" id="bankButton" onclick="bankFunction()">Bank</button>
+                    <button class= "button"id="payLoanButton" onclick="payLoanFunction()">Pay Loan</button>
+                </div>         
+            </div>
+            
+            <div class = "Laptops" id="Laptops">
+                <div class="LaptopValues">
+                    <h3>Laptops</h3>
+                    <select name="laptop" id="laptop"></select>
+                    <h5>Features:</h5>
+                    <ul name ="laptopFeatures" id="laptopFeatures"></ul>
+                </div>
+
+            </div>
+
         </div>
 
-
-        <div class= "Buy" id =" Buy">
-            <div class="BuyValues" id="BuyValues">
-                <h3>Buy</h3>
-                <h3 id= laptopName></h3>
-                <img id="laptopImg" src="" alt="laptopImg"width="250" height="250" >
-                <p id = buyLaptopDescription> You will not regret buying this KOMPUTER</p>
-                <p id = laptopPrice ></p>
-                <button class="button" id="buyNowButton" onclick  ="buyNowButton()">Buy Now</button>
+        <div class= buy-container></div>
+            <div class= "Buy" id =" Buy">
+                <div class="BuyValues" id="BuyValues">
+                    <h3>Buy</h3>
+                    <h3 id= laptopName></h3>
+                    <img id="laptopImg" src="" alt="laptopImg"width="250" height="250" >
+                    <p id = buyLaptopDescription> You will not regret buying this KOMPUTER</p>
+                    <p id = laptopPrice ></p>
+                    <button class="button" id="buyNowButton" onclick  ="buyNowButton()">Buy Now</button>
+                </div>
             </div>
         </div>
     </main>
