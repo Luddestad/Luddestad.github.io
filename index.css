@@ -2,93 +2,88 @@
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    line-height: 1;
 }
 
-main{
-    justify-content: center;
-    align-items: center;
-}
 
 body{
-    background-color: #b9b9b9;
+    background: rgb(246,246,246);
+    background: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(99,103,107,1) 100%);
 }
+#card {
+    position: relative;
+    background-color: #220c0c1a;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 20rem;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+  }
+
+
+  
 
 header{
     background-color:#051d16;
     
 }
  h1{
-    padding: 1em;
-   
+    padding: 1rem;
     text-align:left;
-    font-size: 2em;
-    
+    font-size: 2rem;
     color: #FFFFFF;
 }
 
 h3{
     font-size: 20px;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 p{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-weight:750;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 h5{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
-main{
-    margin:auto;
-    width: 50%;
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+
 }
-
-.Banking{
-    display: inline-block;
-    
-    padding: 2em;
-    margin: 1em;
-    border-radius: 1em;
-    background-color: #220c0c1a;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 8px 6px -6px black;
-
+.action-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 1rem 0;
 }
 
 .BankingValues button{
     background:    #15d798;
-    border-radius: 0.5em;
-    padding:       0.2em 0.4em;
+    border-radius: 0.5rem;
+    padding:       0.2rem 0.4rem;
     color:         #ffffff;
-    display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
     text-align:    center;
+    margin-top: 6rem;
     
 }
 
-.Work{
-    
-     display: inline-block;
-     padding: 2em;
-     margin: 1em;
-     border-radius: 1em;
-     background-color: #220c0c1a;
-     -webkit-box-shadow: 0 8px 6px -6px black;
-     -moz-box-shadow: 0 8px 6px -6px black;
-          box-shadow: 0 8px 6px -6px black;
- }
+
+
 
 .WorkValues  #bankButton{
     
     background:    #15d798;
-    border-radius: 0.5em;
-    padding:       0.2em 0.4em;
+    border-radius: 0.5rem;
+    padding:       0.2rem 0.4rem;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
@@ -100,12 +95,14 @@ main{
 .WorkValues  #workButton{
     
     background:    #d73015;
-    border-radius: 0.5em;
-    padding:       0.2em 0.4em;
+    border-radius: 0.5rem;
+    padding:       0.2rem 0.4rem;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
     text-align:    center;
+    margin-top: 5rem;
+    
 
     
 }
@@ -113,96 +110,107 @@ main{
 .WorkValues  #payLoanButton{
     
     background:    #1539d7;
-    border-radius: 0.5em;
-    padding:       0.2em 0.4em;
+    border-radius: 0.5rem;
+    padding:       0.2rem 1.5rem;
     color:         #ffffff;
     display:       inline-block;
     font:          normal bold 26px/1 "Open Sans", sans-serif;
     text-align:    center;
-    margin: 0.5em 0.5em  0em 0.5em;
-
-    position: relative;
-    
-    
-}
-
-.Laptops{
-    display: inline-block;
-    max-width: 12em;
-    max-height: 20em;
-    padding: 3em;
-    margin: 1em;
-    border-radius: 1em;
-    background-color: #220c0c1a;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 8px 6px -6px black;
+    margin-top: 1rem;    
 }
 
 .Laptops #laptopFeatures li{
-    max-width: 12em;
-    max-height: 12em;
+    max-width: 12rem;
+    max-height: 12rem;
 }
 
 .LaptopValues #laptop{
     
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     
 }
 
 .LaptopValues select{
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
-    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Firefox (3.6 to 15) */
-    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of Internet Explorer  10*/
-    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */
-    background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
-    background-position: center right;
-    background-repeat: no-repeat;
-    border: 1px solid #AAA;
-    border-radius: 2px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    color: #555;
-    font-size: inherit;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 15em;
+    width: 100%;
+    padding: 1em;
 }
 
+
+
+
+
+#laptopPrice{
+
+    font-size: 2rem;
+}
+
+li {
+    font-size: 1rem;
+    list-style: none;
+  }
+  
+
+#laptopImg{
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+.buy-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0 2rem 0;
+    
+}
 .Buy{
-    max-width: 50em;
-    padding: 2em;
-    margin: 1em;
-    border-radius: 1em;
+    text-align: center;
+}
+
+#card2{    
+    position: relative;
     background-color: #220c0c1a;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    width: 64rem;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
          box-shadow: 0 8px 6px -6px black;
-}
-.BuyValues{
-    text-align: center;
-  
     
 }
 
-#laptopPrice{
-    text-align: center;
-    font-size: 2em;
-}
 
-.BuyValues button{
+.Buy button{
+
     background:    #15d798;
-    border-radius: 0.5em;
-    padding:       1em 2em;
+    border-radius: 0.5rem;
+    padding: 1rem;
     color:         #ffffff;
-    display:       inline-block;
-    font:          normal bold 26px/1 "Open Sans", sans-serif;
+    font:          normal bold 2em/1 "Open Sans", sans-serif;
     text-align:    center;
-    margin: 0.5em;
+ 
     
 }
+
+@media screen and (max-width: 1000px) {
+    .action-container {
+      flex-direction: column;
+    }
+  
+    .buy-container {
+      flex-direction: column;
+      height: 40rem;
+      width: 20rem;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+    .header h1 {
+      margin-left: 0;
+    }
+  }
+  
+
